@@ -1,0 +1,92 @@
+.container{
+    margin-top: 50px;
+}
+
+.title{
+    color: var(--softTextColor);
+    margin-bottom: 30px;
+}
+
+.commentsForm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.textArea{
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none;
+    border: 2px solid gray;
+    font-family: inherit;
+}
+
+.button{
+    padding: 10px 20px;
+    background-color: #008080;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #0f4343;
+}
+
+.commentsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+}
+
+.user{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.avatar{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userTextContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.username{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.date{
+    color: gray;
+    font-size: 14px;
+}
+
+.commentText{
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .commentsForm{
+        flex-direction: column;
+    }
+
+    .button{
+        width: 100%;
+    }
+}

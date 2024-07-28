@@ -1,0 +1,24 @@
+.container{
+    flex: 2;
+    margin-top: 50px;
+}
+
+.subTitle{
+    font-size: 20px;
+    color: gray;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: none;
+    }
+}

@@ -1,0 +1,90 @@
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.textContainer, .imageContainer{
+    flex: 1;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.title{
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar{
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.userTextContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.username{
+    font-weight: 500;
+}
+
+.date{
+    color: gray;
+}
+
+.imageContainer{
+    position: relative;
+    height: 280px;
+}
+.image{
+    object-fit: cover;
+}
+
+.content{
+    display: flex;
+    gap: 30px;
+}
+.post{
+    flex: 5;
+}
+
+.postContent{
+    margin-top: 50px;
+}
+
+.postContent p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .title{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .imageContainer{
+        display: none;
+    }
+}

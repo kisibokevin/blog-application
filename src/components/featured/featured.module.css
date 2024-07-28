@@ -1,0 +1,100 @@
+.container{
+    margin-top: 30px;
+}
+
+.title{
+    font-size: 46px;
+    font-weight: 300;
+}
+
+.bold{
+    font-weight: 500;
+}
+.post{
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.imageContainer{
+    flex: 1;
+    height: 400px;
+    position: relative;
+}
+
+.image{
+    object-fit: cover;
+}
+
+.textContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.postTitle{
+    font-size: 32px;
+}
+
+.postDesc{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    color: var(--softTextColor);
+}
+
+.postButton{
+    padding: 16px 20px;
+    border: none;
+    border-radius: 5px;
+    width: max-content;
+}
+
+@media screen and (max-width: 1280px) {
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .title{
+        font-size: 36px;
+    }
+   
+    .postTitle{
+        font-size: 28px;
+    }
+    .postDesc{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title{
+        font-size: 30px;
+    }
+
+    .postTitle{
+        font-size: 24px;
+    }
+    .postDesc{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .title{
+        font-size: 24px;
+    }
+
+    .imageContainer{
+        display: none;
+    }
+    .postTitle{
+        font-size: 20px;
+    }
+    .postDesc{
+        font-size: 12px;
+    }
+}

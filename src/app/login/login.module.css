@@ -1,0 +1,89 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 380px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input, .button{
+    border-radius: 5px;
+    font-family: inherit;
+}
+.input{
+    padding: 7px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.forgot{
+    text-align: right;
+}
+
+.button{
+    border: none;
+    padding: 10px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 16px;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.or{
+    text-align: center;
+    font-weight: 500;
+}
+
+.socialLogins{
+    display: flex;
+        flex-direction: column;
+        gap: 10px;
+}
+
+.socialButton{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.noAccount{
+    text-align: center;
+    color: #808080;
+}
+
+.signUp{
+    margin-top: 20px;
+    color: blue;
+    text-decoration: underline;
+}
