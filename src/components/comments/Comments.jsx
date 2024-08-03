@@ -10,7 +10,7 @@ const fetcher = async (url) => {
     const res = await fetch(url);
     const data = await res.json();
 
-    console.log(data);
+    //console.log(data);
 
     if(!res.ok){
         const error = new Error(data.message);

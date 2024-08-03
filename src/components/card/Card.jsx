@@ -2,8 +2,11 @@ import React from 'react'
 import styles from './card.module.css'
 import Image  from 'next/image';
 import Link from 'next/link';
+import parse from 'html-react-parser'
 
 const Card = ({ post}) => {
+    const cleanDesc = post.desc.replace(/<p>|<\/p>/g, '');
+
     return (
         <div className={styles.container}>
             { post.img && (
@@ -20,7 +23,7 @@ const Card = ({ post}) => {
                     <h1 className={styles.postTitle}>{post.title}</h1>
                 </Link>
                 <p className={styles.postDesc}>
-                {post.desc.substring(0, 40)}
+                {cleanDesc.substring(0, 40)}
                 </p>
                 <Link href={`/posts/${post.slug}`} className={styles.link}>Read More</Link>
             </div>

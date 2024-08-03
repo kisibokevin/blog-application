@@ -1,0 +1,86 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.blogEditor, .blogView{
+    grid-column: span 6;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.blogEditor{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.label{
+    color: var(--softTextColor);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.input{
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-family: inherit;
+    width: 100%;
+}
+
+.textArea{
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-family: inherit;
+    width: 100%;
+    min-height: 400px;
+    resize: none;
+}
+
+.button{
+    padding: 10px 20px;
+    background-color: #008080;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button:hover{
+    background-color: #008080d1;
+}
+
+.blogView{
+    
+}
+
+.blogContent{
+    padding: 10px;
+}
+
+.blogTitle{
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.slug{
+    font-weight: 300;
+}
+
+.desc{
+    font-weight: 500;
+    text-wrap: wrap;
+}
+
+.content{
+    font-size: 16px;
+}

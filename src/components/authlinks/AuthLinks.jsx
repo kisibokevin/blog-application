@@ -15,34 +15,42 @@ const AuthLinks = () => {
 
   const { status } = useSession()
 
-  return <>
-    {status === 'unauthenticated' ? (
-      <Link href="/login" className={styles.link}>Login</Link>
-    ) : (
-      <>
-        <Link href="/write" className={styles.link}>Write</Link>
-        <span className={styles.link} onClick={signOut}>Logout</span>
-      </>
-    )}
-    <div className={styles.menuIcons} onClick = {toggleMenu}>
-      {isMenuOpen ? <RiCloseLine/> : <RiMenuLine/>}
-    </div>
-    {isMenuOpen && (
-      <div className={styles.responsiveMenu}>
-        <Link href="/">Home</Link>
-        <Link href="/">About</Link>
-        <Link href="/">Contact</Link>
-          {status === 'unauthenticated' ? (
-            <Link href="/login">Login</Link>
-            ) : (
-              <>
-                <Link href="/write">Write</Link>
-                <span className={styles.link}>Logout</span>
-              </>
-        )}
+  return (
+    <>
+      {status === "unauthenticated" ? (
+        <Link href="/login" className={styles.link}>
+          Login
+        </Link>
+      ) : (
+        <>
+          <Link href="/editor" className={styles.link}>
+            Write
+          </Link>
+          <span className={styles.link} onClick={signOut}>
+            Logout
+          </span>
+        </>
+      )}
+      <div className={styles.menuIcons} onClick={toggleMenu}>
+        {isMenuOpen ? <RiCloseLine /> : <RiMenuLine />}
       </div>
-    )}
-  </>
+      {isMenuOpen && (
+        <div className={styles.responsiveMenu}>
+          <Link href="/">Home</Link>
+          <Link href="/">About</Link>
+          <Link href="/">Contact</Link>
+          {status === "unauthenticated" ? (
+            <Link href="/login">Login</Link>
+          ) : (
+            <>
+              <Link href="/editor">Write</Link>
+              <span className={styles.link}>Logout</span>
+            </>
+          )}
+        </div>
+      )}
+    </>
+  );
 }
 
 export default AuthLinks
